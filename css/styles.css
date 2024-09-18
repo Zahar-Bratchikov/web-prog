@@ -376,6 +376,7 @@ p {
   display: flex;
   column-gap: 6rem;
   margin: 6rem 0 2rem;
+  padding-bottom: 10rem;
 }
 
 .woman-vr .woman-vr__left {
@@ -410,6 +411,8 @@ p {
 }
 /*СОСТАВИТЬ СТИЛИ ДЛЯ ГРАДИЕНТНОГО БЛОКА С КНОПКОЙ НАЧАТЬ*/
 .begin{
+  display: flex;
+  justify-content: space-between;
   width: 1170px;
   height: 172.65px;
   top: 3178px;
@@ -422,28 +425,28 @@ p {
 }
 
 .begin .begin_left{
-  width: 60%;
+  width: 80%;
 }
 
-.begin .begin_right{
-  display: flex;
-  width: 40%;
-  /* align-items: center; */
-  padding-left: 60rem;
-} 
-
-.begin .begin_left p{
-  padding-top: 2rem;
-  padding-left: 2rem;
+.begin .begin_left .text{
+  padding-top: 3rem;
+  padding-left: 3rem;
   font-size: 12px;
   color: #000;
 }
 
-.begin .begin_left h3{
+.begin .begin_left .text2{
   font-size: 24px;
+  font-weight: 800;
   color: #000;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
+
+.begin .begin_right{
+  width: 20%;
+  padding-left: 0.5rem;
+  padding-top: 3.5rem;
+} 
 
 .begin .begin_right .button_begin{
   background-color: #000;
@@ -452,7 +455,7 @@ p {
   height: 60px;
   border-radius:  40px;
   border: #000;
-}
+} 
 /* Медиа запросы для адаптива */
 
 @media screen and (max-width: 1024px) {
