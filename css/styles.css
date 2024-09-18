@@ -457,7 +457,7 @@ p {
   border: #000;
 } 
 /* Медиа запросы для адаптива */
-
+/*  */
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
