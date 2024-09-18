@@ -214,6 +214,18 @@ p {
   border-radius: 0 4px 4px 0;
 }
 
+.hero_section .hero_section__left .left__social_approve{
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+.hero_section .hero_section__left .left__social_approve span{
+  padding: 17px;
+  font-size: 12px;
+}
+
+
 .hero_section .hero_section__right {
   height: 100%;
 }
@@ -364,6 +376,7 @@ p {
   display: flex;
   column-gap: 6rem;
   margin: 6rem 0 2rem;
+  padding-bottom: 10rem;
 }
 
 .woman-vr .woman-vr__left {
@@ -397,14 +410,60 @@ p {
     border-bottom: 1px solid transparent;
 }
 /*СОСТАВИТЬ СТИЛИ ДЛЯ ГРАДИЕНТНОГО БЛОКА С КНОПКОЙ НАЧАТЬ*/
+.begin{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 172.65px;
+  top: 3178px;
+  left: 135px;
+  gap: 0px;
+  border-radius: 10.72px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
 
+.begin .begin_left{
+  width: 80%;
+}
+
+.begin .begin_left .text{
+  padding-top: 3rem;
+  padding-left: 3rem;
+  font-size: 12px;
+  color: #000;
+}
+
+.begin .begin_left .text2{
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  padding-left: 3rem;
+}
+
+.begin .begin_right{
+  width: 20%;
+  padding-left: 0.5rem;
+  padding-top: 3.5rem;
+} 
+
+.begin .begin_right .button_begin{
+  background-color: #000;
+  color: #fff;
+  width: 190px;
+  height: 60px;
+  border-radius:  40px;
+  border: #000;
+} 
 /* Медиа запросы для адаптива */
-
+/*  */
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
   }
 }
+/* Стили для блога */
 .blog .zagolovok{
   font-size: 62px;
   width: 64%;
