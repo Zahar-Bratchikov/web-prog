@@ -408,9 +408,20 @@ p {
 .blog .zagolovok{
   font-size: 62px;
   width: 64%;
-  padding: 0 0 125px 0;
+
 }
-.blog .text_and_img .hole{
+.blog .blok_dla_blokov{
+  display: flex;
+  /*column-gap: 1rem;*/
+  margin-top: 6rem;
+}
+
+.blog .blok_dla_blokov .text_and_img_1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blog .blok_dla_blokov .text_and_img_1 .hole{
   width: 417.03px;
   height: 287.34px;
   top: 3770.79px;
@@ -419,12 +430,8 @@ p {
   opacity: 0px;
 
 }
-.blog .text_and_img {
-  display: flex;
-  flex-direction: column;
-}
-.blog .text_and_img .blok_1{
-  background-color:  #042C54 ;
+.blog .blok_dla_blokov .text_and_img_1 .blok_1{
+  background-color: #042C54 ;
   width: 417.03px;
   height: 406.71px;
   top: 4059.29px;
@@ -432,34 +439,46 @@ p {
   gap: 0px;
   opacity: 0px;
 }
-.blog .text_and_img .blok_1 .data_1{
+.blog .blok_dla_blokov .text_and_img_1 .blok_1 .data_1{
   font-size: 11.65px;
-  width: 357px;
-  height: 34.95px;
-  top: 4091.56px;
-  left: 161px;
-  gap: 0px;
-  opacity: 0px;
 
 }
-.blog .text_and_img .blok_1 .text_1{
+.blog .blok_dla_blokov .text_and_img_1 .blok_1 .text_1{
   font-size: 25.11px;
   font-weight: bold;
-  width: 342.18px;
-  height: 90.74px;
-  top: 4126.76px;
-  left: 161.13px;
-  gap: 0px;
-  opacity: 0px;
-  
 }
-.blog .text_and_img .blok_1 .ssylka_eto_futare{
+.blog .blok_dla_blokov .text_and_img_1 .blok_1 .ssylka_eto_futare{
   font-size: 12px;
-  width: 148px;
-  height: 34.95px;
-  top: 4404.13px;
-  left: 161px;
+}
+.blog .blok_dla_blokov .text_and_img_2 {
+  display: flex;
+  flex-direction: column;
+}
+.blog .blok_dla_blokov .text_and_img_2 .photo{
+  width: 327.34px;
+  height: 130.47px;
+  top: 3770.79px;
+  left: 602.05px;
   gap: 0px;
   opacity: 0px;
-  
+}
+.blog .blok_dla_blokov .text_and_img_2 .blok_2{
+  background-color: #042C54 ;
+  width: 327.34px;
+  height: 193.37px;
+  top: 3901.26px;
+  left: 602.05px;
+  gap: 0px;
+  opacity: 0px;
+}
+.blog .blok_dla_blokov .text_and_img_2 .blok_2 .data_2{
+  font-size: 11.65px;
+
+}
+.blog .blok_dla_blokov .text_and_img_2 .blok_2 .text_2{
+  font-size: 19px;
+  font-weight: bold;
+}
+.blog .blok_dla_blokov .text_and_img_2 .blok_2 .ssylka_eto_futare_2{
+  font-size: 12px;
 }
