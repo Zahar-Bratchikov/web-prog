@@ -394,18 +394,18 @@ p {
   margin-top: 20rem;
 }
 
-.woman-vr .woman-vr__right .ranny_dostup_text {
+.woman-vr .woman-vr__right .early_access_text {
   color: #71E5FF;
   margin-bottom: 2rem;
 }
 
-.woman-vr .woman-vr__right .krovat {
+.woman-vr .woman-vr__right .bed_text {
   color: #81AFDD;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.woman-vr .woman-vr__right .ssylka_ranny_dostup {
+.woman-vr .woman-vr__right .request_early_access {
     color: #f49867;
     border-bottom: 1px solid transparent;
 }
@@ -462,11 +462,13 @@ p {
 .footer {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 950px;
   background-color: #06182c;
   margin-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 5%;
+  box-sizing: border-box;
 }
 
 .footer .footer_header {
@@ -482,11 +484,15 @@ p {
   align-items: center;
   text-align: center;
   width: 821px;
+  max-width: 821px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
 }
 
 .footer .btn_last {
@@ -507,11 +513,11 @@ p {
 
 .footer .gpt_box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
   gap: 5%;
-  width: 90%; 
+  width: 100%; 
 }
 
 .footer .logo,
@@ -567,7 +573,7 @@ p {
   }
 }
 /* Стили для блога */
-.blog .zagolovok{
+.blog .blog_header{
   font-size: 62px;
   width: 64%;
   padding: 0 0 125px 0;
@@ -585,7 +591,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-.blog .text_and_img .blok_1{
+.blog .text_and_img .block_1{
   background-color:  #042C54 ;
   width: 417.03px;
   height: 406.71px;
@@ -594,7 +600,7 @@ p {
   gap: 0px;
   opacity: 0px;
 }
-.blog .text_and_img .blok_1 .data_1{
+.blog .text_and_img .block_1 .data_1{
   font-size: 11.65px;
   width: 357px;
   height: 34.95px;
@@ -604,7 +610,7 @@ p {
   opacity: 0px;
 
 }
-.blog .text_and_img .blok_1 .text_1{
+.blog .text_and_img .block_1 .text_1{
   font-size: 25.11px;
   font-weight: bold;
   width: 342.18px;
@@ -615,7 +621,7 @@ p {
   opacity: 0px;
   
 }
-.blog .text_and_img .blok_1 .ssylka_eto_futare{
+.blog .text_and_img .block_1 .link_its_future{
   font-size: 12px;
   width: 148px;
   height: 34.95px;
@@ -624,4 +630,68 @@ p {
   gap: 0px;
   opacity: 0px;
   
+}
+
+.footer .footer_header {
+  width: 100%;
+}
+
+/* перенос текста */
+.footer .header_text_box {
+  white-space: normal;  
+  word-break: break-word; 
+  width: 100%; 
+  text-align: center;  
+}
+
+.footer .GPT_box {
+  gap: 2%; /* хз надо ли будет */
+}
+
+@media (max-width: 768px) {
+  .footer .footer_header {
+    width: 100%;
+  }
+
+  .footer .text_box {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer .btn_last {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .footer .GPT_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .Logo,
+  .footer .Links,
+  .footer .Company,
+  .footer .Get_in_touch {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .text_box h1 {
+    font-size: 20px;
+  }
+
+  .footer .btn_last {
+    font-size: 14px;
+    padding: 0.8rem 3rem;
+  }
+
+  .footer .GPT_box {
+    gap: 10px; 
+  }
+
+  .footer .bottom_text_box {
+    font-size: 8px;
+    padding: 5px 0;
+  }
 }
