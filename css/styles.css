@@ -455,7 +455,110 @@ p {
   height: 60px;
   border-radius:  40px;
   border: #000;
-} 
+}
+
+/* Хотите Шагнуть в Будущее Раньше Других? */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: #06182c;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer_header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .header_text_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 821px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 20px
+}
+
+.footer .btn_last {
+  display: flex;
+  padding: 1rem 4rem;
+  background-color: #031B34;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+  margin-top: 20px;
+}
+
+.btn_box {
+  margin-top: -5%;
+}
+
+.footer .gpt_box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 90%; 
+}
+
+.footer .logo,
+.footer .links,
+.footer .company,
+.footer .get_in_touch {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer .box_menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.footer .text_1, .footer .text_2, .footer .text_3 {
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer .text_1 {
+  font-size: 14px;
+}
+
+.footer .text_2 {
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.footer .text_3 {
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.footer .bottom_text_box {
+  font-family: "ManropeLight", sans-serif;
+  color: #ffffff;
+  background-color: #040C18;
+  font-size: 10px;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0; 
+  text-align: center;
+}
+
 /* Медиа запросы для адаптива */
 
 @media screen and (max-width: 1024px) {
