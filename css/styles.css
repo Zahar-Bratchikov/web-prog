@@ -28,7 +28,6 @@
 
 body {
   background: #040C18;
-  ;
   padding: 0 2rem;
 }
 
@@ -141,7 +140,6 @@ p {
   justify-content: space-between;
   align-items: center;
   background: #040C18;
-  ;
 }
 
 .header .header-logo {
@@ -178,7 +176,6 @@ p {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
-  min-height: 60vh;
   margin: 14rem 0 3rem;
 }
 
@@ -238,6 +235,8 @@ p {
 
 .brands_section {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
   justify-content: center;
   align-items: center;
   padding: 0 0 6rem 0;
@@ -411,44 +410,42 @@ p {
 }
 /*СОСТАВИТЬ СТИЛИ ДЛЯ ГРАДИЕНТНОГО БЛОКА С КНОПКОЙ НАЧАТЬ*/
 .begin{
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
-  height: 172.65px;
-  top: 3178px;
-  left: 135px;
-  gap: 0px;
-  border-radius: 10.72px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  width: 73rem;
+  height: 10.8rem;
+  border-radius: 0.7rem;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.begin .begin_left{
-  width: 80%;
+.begin .rectangle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.begin .rectangle .begin_left{
+  margin-top: 3.5rem;
+  margin-left: 2.8rem;
 }
 
 .begin .begin_left .text{
-  padding-top: 3rem;
-  padding-left: 3rem;
+  background: #0E0E0E;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 12px;
-  color: #000;
 }
 
 .begin .begin_left .text2{
-  font-size: 24px;
-  font-weight: 800;
   color: #000;
-  padding-left: 3rem;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px;
 }
 
-.begin .begin_right{
-  width: 20%;
-  padding-left: 0.5rem;
-  padding-top: 3.5rem;
-} 
-
-.begin .begin_right .button_begin{
+.begin .rectangle .button_begin{
   background-color: #000;
   color: #fff;
   width: 190px;
