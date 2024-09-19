@@ -424,7 +424,7 @@ p {
 }
 
 .begin .rectangle .begin_left{
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   margin-left: 2.8rem;
 }
 
@@ -442,7 +442,12 @@ p {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  line-height: 45px;
+  line-height: 40px;
+}
+
+.begin .rectangle .btn_cont{
+  margin-top: 3.5rem;
+  margin-right: 1.7rem;
 }
 
 .begin .rectangle .button_begin{
@@ -454,7 +459,139 @@ p {
   border: #000;
 }
 
-/* Хотите Шагнуть в Будущее Раньше Других? */
+.blog .header_blog {
+  font-size: 62px;
+  width: 64%;
+  padding: 8rem 0rem 6rem 0rem;
+}
+
+.blog .container_for_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  padding-bottom: 7rem;
+  
+      
+}
+
+.blog .container_for_block .large_block {
+  display: flex;
+  flex-direction: column;
+  
+  
+  /*margin-right: 4rem; /* Внешний отступ для увеличения/уменьшения расстояния */
+}
+
+.blog .container_for_block .large_block .large_img {
+  width: 100%;
+  height: 406.71px; /* Высота изображения */
+  object-fit: cover;
+  width: 417.03px;
+  height: 287.34px;
+  top: 3770.79px;
+  left: 134.34px;
+  gap: 0px;
+  opacity: 0px;
+  
+  
+}
+
+.blog .container_for_block .large_block .blok_large {
+  background-color: #042C54;
+  width: 100%;
+  height: 288.5px; /* Высота блока с текстом */
+  color: white;
+  width: 417.03px;
+  height: 406.71px;
+  top: 4059.29px;
+  left: 135.51px;
+  gap: 0px;
+  opacity: 0px;
+  
+ 
+  
+  
+
+  
+}
+
+
+
+.blog .container_for_block .large_block .blok_large .data_1 {
+  font-size: 11.65px;
+  margin-bottom: 0.5rem;
+  padding: 2.5rem 0 0 1.4rem;
+}
+
+.blog .container_for_block .large_block .blok_large .text_1 {
+  font-size: 25.11px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  
+  padding: 0 7rem 11rem 1.4rem;
+}
+
+
+
+.blog .container_for_block .large_block .blok_large .ssylka_eto_futare {
+  font-size: 12px;
+  padding: 0 0 10rem 1.4rem;
+
+}
+
+.blog .small_blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 327.34px); /* Маленькие блоки в два столбца */
+  grid-gap: 3rem;  /*Одинаковое расстояние между маленькими блоками 
+  /*width: 35%; /* Ширина для маленьких блоков 
+  margin-left: 4rem;  Изменить это значение для увеличения/уменьшения расстояния */
+
+}
+
+.blog .small_blocks .text_and_img_2 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.blog .small_blocks .text_and_img_2 .photo {
+   /* Высота изображения маленького блока */
+  object-fit: cover;
+  width: 327.34px;
+  height: 130.47px;
+
+
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 {
+  background-color: #042C54;
+  padding: 0;
+  color: white;
+  width: 327.34px;
+  height: 193.37px;
+
+
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .data_2 {
+  padding: 1rem 0 0 1.4rem;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .text_2 {
+  font-size: 19px;
+  font-weight: bold;
+  /*margin-bottom: 1rem;*/
+  padding: 0rem 2rem 2.1rem 1.4rem;
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .ssylka_eto_futare_2 {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0 0 0 1.4rem;
+}
 
 .footer {
   display: flex;
@@ -480,13 +617,13 @@ p {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 821px;
+  width: auto;
   max-width: 821px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7%;
-  margin-bottom: 20px;
+  margin-top: 1,5%;
+  margin-bottom: 5%;
   word-wrap: break-word; 
   word-break: break-word;
   white-space: normal; 
@@ -501,34 +638,56 @@ p {
   font-size: 18px;
   border-radius: 0;
   border: 2px solid #ffffff;
-  margin-top: 20px;
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
-.btn_box {
+.footer .btn_box {
   margin-top: -5%;
 }
 
 .footer .gpt_box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   text-align: center;
   flex-wrap: wrap;
   gap: 5%;
   width: 100%; 
 }
 
-.footer .logo,
-.footer .links,
-.footer .company,
+.footer .links {
+  margin: 0 auto; /* Центрируем блок links */
+  padding-left: 15%;
+}
+
+.footer .company, 
 .footer .get_in_touch {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
+  margin-left: auto; /* Сдвигаем блоки company и get_in_touch вправо */
 }
 
 .footer .box_menu {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+}
+
+.footer .logo {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение */
+  align-items: flex-start; /* Выровнять по левому краю */
+}
+
+.footer .gpt_icon {
+  margin-bottom: 10px; /* Отступ между изображением и текстом */
+  width: auto; /* Оставляем размер картинки как есть */
+  height: auto;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.footer .text_2 {
+  text-align: left; /* Выровнять текст по левому краю */
 }
 
 .footer .text_1, .footer .text_2, .footer .text_3 {
@@ -544,6 +703,7 @@ p {
 .footer .text_2 {
   font-size: 12px;
   margin-top: 25px;
+  text-align: left;
 }
 
 .footer .text_3 {
@@ -551,7 +711,17 @@ p {
   margin-top: 25px;
 }
 
-.footer .bottom_text_box {
+.rights_reserved {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  background-color: #06182c;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.rights_reserved .rights_reserved_text {
   font-family: "ManropeLight", sans-serif;
   color: #ffffff;
   background-color: #040C18;
@@ -687,7 +857,7 @@ p {
     gap: 10px; 
   }
 
-  .footer .bottom_text_box {
+.rights_reserved .rights_reserved_text {
     font-size: 8px;
     padding: 5px 0;
   }
